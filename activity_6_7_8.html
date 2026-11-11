@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Media – Writing Captions</title>
+<style>
+:root{--navy:#17324d;--blue:#2463a6;--pale:#eef5fb;--gold:#f2c66d;--ink:#243447}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:#f5f7fa;line-height:1.55}
+header{background:linear-gradient(135deg,#17324d,#2463a6);color:white;padding:34px 20px;text-align:center}
+header h1{margin:0 0 8px;font-size:clamp(25px,4vw,38px)}header p{margin:0 auto;max-width:760px}
+nav{position:sticky;top:0;background:white;padding:10px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;box-shadow:0 2px 8px #0001;z-index:2}
+nav a{color:var(--blue);font-weight:bold;text-decoration:none;padding:8px 12px;border-radius:8px}nav a:hover{background:var(--pale)}
+main{max-width:1000px;margin:24px auto;padding:0 16px}.card{background:white;border-radius:14px;padding:22px;margin:18px 0;box-shadow:0 3px 14px #19334d12}
+h2{color:var(--navy);margin-top:0}h3{color:var(--blue)}.tag{display:inline-block;background:#e8f1fb;color:#174d82;padding:4px 10px;border-radius:20px;font-size:13px;font-weight:bold}
+.prompt{background:#f3f7fb;padding:14px;border-left:4px solid var(--blue);border-radius:8px;margin:12px 0}
+label{display:block;font-weight:bold;margin:12px 0 5px}input,textarea,select{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}textarea{min-height:76px;resize:vertical}
+button{border:0;background:var(--blue);color:white;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer;margin:8px 6px 0 0}button.secondary{background:#e7edf4;color:var(--navy)}.result{margin-top:10px;padding:12px;background:#edf7f0;border-radius:8px;display:none}
+.small{font-size:14px;color:#536477}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid #cbd5e1;padding:9px;text-align:left}th{background:#eaf1f8}
+footer{text-align:center;padding:24px;color:#607080}
+@media print{nav,button{display:none}body{background:white}.card{box-shadow:none;border:1px solid #ddd;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header>
+  <span class="tag">ENGLISH LEARNING MEDIA</span>
+  <h1>WRITING CAPTIONS</h1>
+  <p>Captions for Pictures, Photographs, Tables, Graphs, and Charts</p>
+  <p>Explore the examples, complete the individual tasks, collaborate on a caption folder, and present your work.</p>
+</header>
+<nav>
+  <a href="#guide">Caption Guide</a><a href="#activity3">Activity 3</a><a href="#activity6">Activity 6</a><a href="#activity7">Activity 7</a><a href="#activity8">Activity 8</a><a href="#checklist">Checklist</a>
+</nav>
+<main>
+<section class="card" id="guide">
+<h2>Quick Learning Guide</h2>
+<p>A caption is a short text that explains a visual. A good caption helps readers understand what the visual shows and why it is important.</p>
+<div class="grid">
+<div class="prompt"><b>Photograph</b><br>Use a factual description. For a completed event, use the past tense.<br><i>Example: English Club members performed a drama at the school hall on 20 October 2026.</i></div>
+<div class="prompt"><b>Picture / Illustration</b><br>Describe the subject and credit the creator or source when required.<br><i>Example: Mount Bromo, photographed by Rizky Ananda (2025).</i></div>
+<div class="prompt"><b>Table</b><br>Use a clear label and explain what the data measures.<br><i>Example: Table 1. Number of Plastic Bottles Collected by Each Grade in One Week.</i></div>
+<div class="prompt"><b>Graph / Chart</b><br>State the trend or the proportions accurately.<br><i>Example: Figure 2. The Class's Average English Test Scores from Test 1 to Test 4.</i></div>
+</div>
+<h3>Remember</h3>
+<ul><li>Choose the correct label: Photograph, Picture, Table, Graph, or Chart.</li><li>Describe only what the visual actually shows.</li><li>Use the correct tense and include dates or units when needed.</li><li>Give the source for material taken from another creator or website.</li><li>Respect privacy. Do not publish identifiable people without permission.</li></ul>
+</section>
+
+
+<section class="card" id="activity3">
+<span class="tag">INDIVIDUAL LISTENING</span>
+<h2>Activity 3 – Listening</h2>
+<p>Listen to the short audio in which a speaker introduces three visuals: a photograph, a table, and a graph. Complete the notes while listening. You may listen more than once.</p>
+<div class="prompt">
+<b>Listening audio script</b>
+<p id="listenScript">Good morning, everyone. Today I will introduce three visuals about digital life at school. First, the photograph shows students in the computer laboratory at Merdeka Senior High School on Monday, 9 November 2026. They are learning how to create a class presentation using computers. This photograph helps the audience see what digital learning looks like in our school. Second, the table shows the number of students who used the school learning platform during one week. On Monday, 40 students logged in; on Tuesday,  fifty students; and on Wednesday, 65 students. The table helps readers compare the number of users on each day. The data was collected by the school's ICT team. Third, the line graph shows the number of students who submitted their English assignments online over four weeks. The number increased from 20 students in Week 1 to 35 in Week 2, 45 in Week 3, and 60 in Week 4. The graph makes the upward trend easy to see. The table and graph use data collected by the school's ICT team in November 2026. Thank you.</p>
+<div class="small">Use the button to listen. If audio playback is not supported on your device, ask your teacher to read the script aloud.</div>
+<button onclick="playListening()">▶ Play listening audio</button>
+<button class="secondary" onclick="pauseListening()">Pause</button>
+<button class="secondary" onclick="stopListening()">Stop</button>
+</div>
+<h3>Listening Notes</h3>
+<p class="small">Write short notes in the table. Focus on what each visual shows, its key details, and its social function.</p>
+<table>
+<thead><tr><th>Visual</th><th>What it shows</th><th>Key detail (who / where / when / number)</th><th>Social function</th></tr></thead>
+<tbody>
+<tr><td>1. Photograph</td><td><textarea id="l1a" placeholder="What does it show?"></textarea></td><td><textarea id="l1b" placeholder="Who, where, when?"></textarea></td><td><textarea id="l1c" placeholder="Why is it included?"></textarea></td></tr>
+<tr><td>2. Table</td><td><textarea id="l2a" placeholder="What does it show?"></textarea></td><td><textarea id="l2b" placeholder="Numbers / source / time"></textarea></td><td><textarea id="l2c" placeholder="Why is it included?"></textarea></td></tr>
+<tr><td>3. Graph</td><td><textarea id="l3a" placeholder="What does it show?"></textarea></td><td><textarea id="l3b" placeholder="Trend / numbers / time"></textarea></td><td><textarea id="l3c" placeholder="Why is it included?"></textarea></td></tr>
+</tbody>
+</table>
+<h3>Comprehension Questions</h3>
+<label for="q31">1. Which visual needs a source note?</label><textarea id="q31" placeholder="Write your answer..."></textarea>
+<label for="q32">2. Which expression did the speaker use to describe a trend?</label><textarea id="q32" placeholder="Write the expression..."></textarea>
+<label for="q33">3. Which caption would help the audience most, and why?</label><textarea id="q33" placeholder="Explain your choice..."></textarea>
+<button onclick="reviewListening()">Review my answers</button>
+<div class="result" id="a3result"></div>
+</section>
+
+<section class="card" id="activity6">
+<span class="tag">INDIVIDUAL WORK</span>
+<h2>Activity 6 – Situations: Writing Captions</h2>
+<p>Write a suitable caption for each situation. Use the correct label, the right tense, accurate details, and a source where needed.</p>
+<div id="tasks"></div>
+<button onclick="checkActivity6()">Check my work</button><button class="secondary" onclick="clearActivity6()">Clear answers</button>
+<div class="result" id="a6result" aria-live="polite"></div>
+<p class="small">Your answers stay in this browser session. Review your captions against the quick guide before submitting them to your teacher.</p>
+</section>
+
+<section class="card" id="activity7">
+<span class="tag">GROUP WORK · FOUR STUDENTS</span>
+<h2>Activity 7 – Group Project: Caption Folder</h2>
+<p><b>Theme: Digital Life at School</b></p>
+<p>Work in a group of four. Collect one photograph, one picture, one table, one graph, and one chart. Write a caption for each visual, check the accuracy of the data, include the source, and ask permission when people appear in a photograph.</p>
+<h3>Plan your caption folder</h3>
+<div class="grid">
+<div><label for="group">Group name / number</label><input id="group" placeholder="Example: Group 1"></div>
+<div><label for="members">Four group members</label><textarea id="members" placeholder="Write the names of all four members"></textarea></div>
+</div>
+<div id="folderTasks"></div>
+<h3>Folder submission notes</h3>
+<label for="folderlink">Paste your shared folder link (Google Drive / Canva / Padlet)</label><input id="folderlink" type="url" placeholder="https://...">
+<button onclick="saveFolder()">Save group plan</button><button class="secondary" onclick="window.print()">Print this activity</button>
+<div class="result" id="folderresult"></div>
+</section>
+
+<section class="card" id="activity8">
+<span class="tag">GROUP PRESENTATION</span>
+<h2>Activity 8 – Presentation</h2>
+<p>Record a one-to-two-minute video or audio presentation of your caption folder, or present it live.</p>
+<h3>Presentation steps</h3>
+<ol><li>Introduce your theme: <i>Digital Life at School</i>.</li><li>Show each visual on the screen.</li><li>Read its caption aloud.</li><li>Explain why the caption is accurate and useful.</li><li>Answer one audience question about the social function of captions.</li></ol>
+<h3>Prepare your presentation</h3>
+<label for="intro">1. Brief introduction</label><textarea id="intro" placeholder="Hello everyone. Our group's theme is..."></textarea>
+<label for="visual">2. Which visual will you explain first?</label><select id="visual"><option>Photograph</option><option>Picture</option><option>Table</option><option>Graph</option><option>Chart</option></select>
+<label for="readcaption">3. Write the caption you will read aloud</label><textarea id="readcaption" placeholder="Write your caption here..."></textarea>
+<label for="explain">4. Explain why it is accurate and useful</label><textarea id="explain" placeholder="This caption is accurate because..."></textarea>
+<label for="question">5. Possible audience question and your answer</label><textarea id="question" placeholder="Question: What is the social function of this caption?&#10;Answer: ..."></textarea>
+<label for="presentlink">Paste your video/audio/presentation link (if available)</label><input id="presentlink" type="url" placeholder="https://...">
+<button onclick="checkPresentation()">Review presentation plan</button>
+<div class="result" id="a8result"></div>
+</section>
+
+<section class="card" id="checklist">
+<h2>Peer Feedback Checklist</h2>
+<p>Exchange your caption folders with another group. Tick each item after checking the folder.</p>
+<div id="checks">
+<label><input type="checkbox"> The label is correct.</label>
+<label><input type="checkbox"> The description is accurate.</label>
+<label><input type="checkbox"> The language is suitable and clear.</label>
+<label><input type="checkbox"> The source is given where needed.</label>
+<label><input type="checkbox"> The privacy of other people is protected.</label>
+</div>
+<label for="feedback">Feedback for the other group</label><textarea id="feedback" placeholder="One strength of this folder is... One suggestion is..."></textarea>
+<p class="small">Privacy reminder: If a person can be identified in a photograph, obtain permission before sharing it publicly. If permission has not been given, choose another photo, crop or blur identifying details where appropriate, or do not publish it.</p>
+</section>
+</main>
+<footer>Writing Captions · English Learning Media · Student Practice</footer>
+<script>
+const situations = [
+["Situation 1","You post a photograph of your English Club members performing a drama on stage on 20 October 2026 in the school hall."],
+["Situation 2","You include a photograph of a flood in your city in a geography report. You took the photo yourself last week."],
+["Situation 3","You include a table showing the number of plastic bottles collected by Grade X, XI, and XII in one week: 120, 95, and 150."],
+["Situation 4","You use a line graph showing that your class's average English test score rose from 65 in the first test to 82 in the fourth test."],
+["Situation 5","You create a pie chart showing that 50% of students walk to school, 30% ride motorcycles, and 20% take public transport."],
+["Situation 6","You use a mountain picture from a credible website. The author's name is Rizky Ananda, and it was published in 2025."],
+["Situation 7","You post a charity-event photograph on the school's social media. Several students in the photo have not given permission. Decide what you will do and write a suitable caption."],
+["Situation 8","You are the editor of your school's digital magazine. Rewrite “A nice event” using these details: Science Fair, Grade XI, 14 November 2026, Hall B."]
+];
+document.getElementById("tasks").innerHTML=situations.map((s,i)=>`<div class="prompt"><b>${s[0]}</b><br>${s[1]}<label for="s${i}">Your caption / decision</label><textarea id="s${i}" placeholder="Write your answer here..."></textarea></div>`).join("");
+const folder = [["Photograph","A school photograph related to digital life. Remember to ask permission."],["Picture","An illustration or image about digital learning or technology. Include its source."],["Table","A table with accurate data about digital life at school."],["Graph","A graph showing a trend, such as students' use of learning platforms."],["Chart","A chart showing proportions, such as devices used by students."]];
+document.getElementById("folderTasks").innerHTML=folder.map((x,i)=>`<div class="prompt"><b>${x[0]}</b><br>${x[1]}<label for="f${i}">Visual source and caption</label><textarea id="f${i}" placeholder="Source: ...&#10;Caption: ..."></textarea></div>`).join("");
+function checkActivity6(){let filled=situations.filter((_,i)=>document.getElementById("s"+i).value.trim()).length;let r=document.getElementById("a6result");r.style.display="block";r.innerHTML=`You have written ${filled} of 8 captions. ${filled===8?"All situations have an answer. Review accuracy, labels, tense, sources, and privacy before submitting.":"Complete the remaining situations, then review your answers using the guide."}`}
+function clearActivity6(){situations.forEach((_,i)=>document.getElementById("s"+i).value="");document.getElementById("a6result").style.display="none"}
+function saveFolder(){let count=folder.filter((_,i)=>document.getElementById("f"+i).value.trim()).length;let r=document.getElementById("folderresult");r.style.display="block";r.textContent=`Group plan: ${count} of 5 visual entries have been drafted. Group: ${document.getElementById("group").value||"Not entered"}. Add your shared folder link and make sure the teacher can access it.`}
+function checkPresentation(){let ids=["intro","readcaption","explain","question"];let n=ids.filter(id=>document.getElementById(id).value.trim()).length;let r=document.getElementById("a8result");r.style.display="block";r.textContent=`You have completed ${n} of 4 presentation notes. Make sure the final recording or live presentation lasts 1–2 minutes and shows the visual while the caption is read aloud.`}
+
+function playListening(){
+  if(!("speechSynthesis" in window)){alert("Audio playback is not supported in this browser. Please ask your teacher to read the script.");return;}
+  window.speechSynthesis.cancel();
+  const text=document.getElementById("listenScript").innerText;
+  const utterance=new SpeechSynthesisUtterance(text);
+  utterance.lang="en-US"; utterance.rate=0.88;
+  window.speechSynthesis.speak(utterance);
+}
+function pauseListening(){if("speechSynthesis" in window && window.speechSynthesis.speaking)window.speechSynthesis.pause();}
+function stopListening(){if("speechSynthesis" in window)window.speechSynthesis.cancel();}
+function reviewListening(){
+  const ids=["l1a","l1b","l1c","l2a","l2b","l2c","l3a","l3b","l3c","q31","q32","q33"];
+  const n=ids.filter(id=>document.getElementById(id).value.trim()).length;
+  const r=document.getElementById("a3result");r.style.display="block";
+  r.textContent=`You have completed ${n} of 12 response fields. Listen again and check that your notes include the visual details, the source of the data, the upward trend, and the purpose of each visual.`;
+}
+
+</script>
+</body>
+</html>
