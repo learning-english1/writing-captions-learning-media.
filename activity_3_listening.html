@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activity 3 – Listening: Writing Captions</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#243447;font:16px/1.55 Arial,sans-serif}
+header{background:linear-gradient(135deg,#17324d,#2868a8);color:white;text-align:center;padding:30px 18px}
+header h1{margin:0 0 8px;font-size:clamp(24px,4vw,36px)}header p{max-width:760px;margin:auto}
+main{max-width:950px;margin:24px auto;padding:0 15px}.card{background:white;border-radius:14px;padding:22px;margin:16px 0;box-shadow:0 3px 14px #19334d12}
+h2,h3{color:#17324d;margin-top:0}.tag{display:inline-block;background:#e6f0fb;color:#20568b;border-radius:20px;padding:4px 10px;font-size:13px;font-weight:bold}
+.note{background:#eff5fb;border-left:4px solid #2868a8;padding:13px;border-radius:7px}
+button{background:#2463a6;color:white;border:0;border-radius:8px;padding:11px 16px;font-weight:bold;cursor:pointer;margin:5px 5px 5px 0}button.secondary{background:#e7edf4;color:#17324d}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid #cbd5e1;padding:9px;vertical-align:top;text-align:left}th{background:#eaf1f8}
+textarea{width:100%;min-height:72px;padding:9px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;resize:vertical}
+label{font-weight:bold;display:block;margin:14px 0 5px}.question{margin:17px 0}.result{display:none;background:#edf7f0;border-radius:8px;padding:12px;margin-top:12px}
+.small{font-size:14px;color:#5b6b7c}footer{text-align:center;color:#607080;padding:22px}
+@media(max-width:650px){table,tbody,tr,td{display:block;width:100%}thead{display:none}td{border-bottom:0}td:first-child{background:#eaf1f8;font-weight:bold}tr{border:1px solid #cbd5e1;margin-bottom:12px}td:last-child{border-bottom:1px solid #cbd5e1}}
+@media print{button{display:none}body{background:white}.card{box-shadow:none;border:1px solid #ddd}}
+</style></head>
+<body>
+<header><span class="tag">INDIVIDUAL LISTENING ACTIVITY</span><h1>Activity 3 – Listening</h1><p>Understanding Captions for Photographs, Tables, and Graphs</p></header>
+<main>
+<section class="card">
+<h2>Instructions</h2>
+<p>Listen to the short audio in which a speaker introduces three visuals: a photograph, a table, and a graph. Complete the notes while listening. You may listen more than once.</p>
+<div class="note"><b>Listening focus:</b> Identify what each visual shows, the key details (who, where, when, or numbers), and the social function of each visual.</div>
+</section>
+<section class="card">
+<h2>Listening Audio</h2>
+<p>Press Play to listen to the speaker. You can pause or replay the audio as needed.</p>
+<button onclick="playAudio()">▶ Play audio</button><button class="secondary" onclick="pauseAudio()">Pause</button><button class="secondary" onclick="stopAudio()">Stop / Replay</button>
+<p class="small">If your browser does not support audio playback, ask your teacher to read the listening script aloud.</p>
+<details><summary><b>Teacher's script (open after listening)</b></summary>
+<p id="script">Good morning, everyone. Today I will introduce three visuals about digital life at school. First, the photograph shows students in the computer laboratory at Merdeka Senior High School on Monday, 9 November 2026. They are learning how to create a class presentation using computers. This photograph helps the audience see what digital learning looks like in our school. Second, the table shows the number of students who used the school learning platform during one week. On Monday, 40 students logged in; on Tuesday, 50 students; and on Wednesday, 65 students. The table helps readers compare the number of users on each day. The data was collected by the school's ICT team. Third, the line graph shows the number of students who submitted their English assignments online over four weeks. The number increased from 20 students in Week 1 to 35 in Week 2, 45 in Week 3, and 60 in Week 4. The graph makes the upward trend easy to see. The table and graph use data collected by the school's ICT team in November 2026. Thank you.</p>
+</details>
+</section>
+<section class="card">
+<h2>Listening Notes</h2>
+<p>Complete the table based on the audio.</p>
+<table><thead><tr><th>Visual</th><th>What it shows</th><th>Key detail (who / where / when / number)</th><th>Social function</th></tr></thead>
+<tbody>
+<tr><td>1. Photograph</td><td><textarea id="a1" placeholder="What does the photograph show?"></textarea></td><td><textarea id="b1" placeholder="Who, where, and when?"></textarea></td><td><textarea id="c1" placeholder="Why is the photograph used?"></textarea></td></tr>
+<tr><td>2. Table</td><td><textarea id="a2" placeholder="What does the table show?"></textarea></td><td><textarea id="b2" placeholder="Write the numbers and source."></textarea></td><td><textarea id="c2" placeholder="Why is the table used?"></textarea></td></tr>
+<tr><td>3. Graph</td><td><textarea id="a3" placeholder="What does the graph show?"></textarea></td><td><textarea id="b3" placeholder="Write the trend, numbers, and time period."></textarea></td><td><textarea id="c3" placeholder="Why is the graph used?"></textarea></td></tr>
+</tbody></table>
+</section>
+<section class="card">
+<h2>Comprehension Questions</h2>
+<div class="question"><label for="q1">1. Which visual needs a source note?</label><textarea id="q1" placeholder="Write your answer here..."></textarea></div>
+<div class="question"><label for="q2">2. Which expression did the speaker use to describe a trend?</label><textarea id="q2" placeholder="Write the expression here..."></textarea></div>
+<div class="question"><label for="q3">3. Which caption would help the audience most, and why?</label><textarea id="q3" placeholder="Explain your answer..."></textarea></div>
+<button onclick="review()">Check completion</button><button class="secondary" onclick="clearAnswers()">Clear answers</button>
+<div class="result" id="result"></div>
+</section>
+<section class="card">
+<h3>Remember</h3>
+<ul><li>A caption explains the information shown in a visual.</li><li>Use accurate details, including dates and numbers.</li><li>Give credit to the source of information or visuals when necessary.</li><li>Choose a caption that helps the audience understand the visual clearly.</li></ul>
+</section>
+</main><footer>English Learning Media · Writing Captions</footer>
+<script>
+let utterance;
+function playAudio(){if(!("speechSynthesis" in window)){alert("Audio playback is not supported. Please ask your teacher to read the script.");return;}speechSynthesis.cancel();utterance=new SpeechSynthesisUtterance(document.getElementById("script").innerText);utterance.lang="en-US";utterance.rate=.88;speechSynthesis.speak(utterance);}
+function pauseAudio(){if("speechSynthesis" in window && speechSynthesis.speaking)speechSynthesis.pause();}
+function stopAudio(){if("speechSynthesis" in window)speechSynthesis.cancel();}
+function review(){let ids=["a1","b1","c1","a2","b2","c2","a3","b3","c3","q1","q2","q3"];let n=ids.filter(x=>document.getElementById(x).value.trim()).length;let r=document.getElementById("result");r.style.display="block";r.textContent=`You have completed ${n} of 12 response fields. Listen again and check your notes for accurate details, numbers, source information, and the purpose of each visual.`;}
+function clearAnswers(){document.querySelectorAll("textarea").forEach(x=>x.value="");document.getElementById("result").style.display="none";}
+</script></body></html>
